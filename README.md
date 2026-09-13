@@ -316,3 +316,61 @@ This page answers:
 
 "Where is the booking and revenue performance coming from?"
 --
+
+📊 Data Analysis & Visualisation
+-
+
+The SkyBook Power BI dashboard provides interactive visualisations to understand flight booking data efficiently.
+
+Major Analysis Areas
+- Airline-wise booking volume.
+- Airline-wise revenue.
+- Route-wise booking performance.
+- Booking status distribution.
+- Payment method distribution.
+- Monthly booking trends.
+- Fare analysis.
+- Passenger age analysis.
+- Departure city analysis.
+- City-wise revenue.
+- Confirmed, cancelled, and completed bookings.
+
+Users can interact with the dashboard using slicers, filters, navigation controls, and interactive visuals to explore the data from different perspectives.
+
+---
+
+🎯 Business Questions Answered
+-
+The project helps answer important business questions such as:
+
+- Which airlines have higher booking volumes?
+- Which airlines generate more revenue?
+- Which routes receive more bookings?
+- How are bookings distributed by status?
+- Which payment methods are commonly used?
+- Which departure cities contribute more revenue?
+- What is the average fare?
+- What is the average passenger age?
+- Which bookings have the highest fares?
+- How many bookings are confirmed, cancelled, and completed?
+
+---
+
+🌟 Key Dashboard Features
+-
+- Interactive Power BI visuals.
+- KPI cards for important flight metrics.
+- Airline-wise booking analysis.
+- Payment method analysis.
+- Monthly booking trend.
+- City-level revenue analysis.
+- Booking status analysis.
+- Fare analysis.
+- Passenger age analysis.
+- Interactive slicers and filters.
+- Cross-filtering between visuals.
+- Navigation between dashboard pages.
+- Detailed booking table.
+- Figma-based custom dashboard UI.
+- Dynamic DAX-based KPI calculations.
+- Cloud-based AWS data workflow.
