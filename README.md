@@ -374,3 +374,72 @@ The project helps answer important business questions such as:
 - Figma-based custom dashboard UI.
 - Dynamic DAX-based KPI calculations.
 - Cloud-based AWS data workflow.
+
+---
+ 🚀 Expected Outcome
+-
+
+The final outcome of the project is an interactive flight booking and revenue analytics dashboard that helps users:
+
+- Understand overall booking performance.
+- Analyse airline and route performance.
+- Monitor revenue and fare metrics.
+- Explore booking status and payment methods.
+- Analyse passenger-related information.
+- Identify city-level revenue contribution.
+- Explore monthly booking trends.
+- Make data-driven business decisions.
+- Present complex flight data in an easy-to-understand visual format.
+---
+
+🌟 Advantages
+-
+- End-to-end cloud-based analytics workflow.
+- Centralised flight data analysis.
+- Structured data discovery using AWS Glue.
+- Serverless SQL analysis using Amazon Athena.
+- Interactive Power BI dashboard.
+- Dynamic KPI calculations using DAX.
+- Easy filtering and exploration of flight data.
+- Faster identification of booking and revenue patterns.
+- Combines cloud, SQL, and business intelligence technologies.
+- Provides a strong foundation for future flight analytics solutions.
+🔮 Future Enhancements
+---
+
+Future improvements may include:
+-
+
+- Automated data refresh.
+- Real-time or near-real-time flight data integration.
+- Advanced airline performance KPIs.
+- Predictive booking analysis.
+- Revenue forecasting.
+- Demand forecasting by route and city.
+- Machine learning-based flight demand prediction.
+- Advanced passenger behaviour analysis.
+- Cloud-based automated reporting.
+- Mobile-friendly dashboard deployment.
+---
+📌 Conclusion
+-
+
+- The SkyBook Flight Booking & Revenue Analytics project demonstrates how cloud services, SQL, and business intelligence tools can be combined to build an end-to-end analytics solution.
+
+- By using Amazon S3, AWS IAM, AWS Glue, Glue Data Catalog, Amazon Athena, SQL, Athena ODBC, Power Query, DAX, Power BI, and Figma, the project transforms raw flight booking data into meaningful and interactive business insights.
+
+- The final dashboard provides a clear analytical view of booking volume, airline performance, routes, fares, passengers, payment methods, booking status, monthly trends, and city-level revenue.
+
+- From raw flight data to real business insight — SkyBook turns data into a clear story.
+----
+
+👩‍💻 Developed By
+
+---
+
+Jenifer S
+--
+
+B.Tech Artificial Intelligence and Data Science
+
+Project: SkyBook – Flight Booking & Revenue Analytics 
