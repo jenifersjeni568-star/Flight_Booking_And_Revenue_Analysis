@@ -98,13 +98,13 @@ AWS IAM is used to manage permissions between the AWS services involved in the p
 An IAM role is configured so that the Glue process can access the required S3 data and work with the Glue Data Catalog.
 
 Actual IAM Role Used
-
+```text
 new-etl-role
-
+```
 Purpose
-Control service access
-Provide required permissions
-Allow AWS Glue to access the S3 data
+- Control service access
+- Provide required permissions
+- Allow AWS Glue to access the S3 data
 
 ---
 
@@ -118,11 +118,13 @@ The Glue Crawler scans the data stored in S3 and identifies the available fields
 Actual Glue Resources Used
 
 Database:
+```text
 customer-db
-
+```
 Crawler:
+```text
 new-etl-crawler
-
+```
 The crawler automatically identifies the structure of the dataset and registers the discovered information in the Glue Data Catalog.
 
 ---
@@ -130,11 +132,11 @@ The crawler automatically identifies the structure of the dataset and registers 
 🗂️ 5. Glue Data Catalog
 -
 
-The Glue Data Catalog stores the metadata discovered by AWS Glue.
+- The Glue Data Catalog stores the metadata discovered by AWS Glue.
 
-It maintains information about the database, table structure, columns and data types.
+- It maintains information about the database, table structure, columns and data types.
 
-This cataloged information allows Amazon Athena to understand the flight dataset and query it using SQL.
+- This cataloged information allows Amazon Athena to understand the flight dataset and query it using SQL.
 
 ---
 
@@ -149,26 +151,26 @@ Analysis Performed
 
 The project contains 20 SQL queries covering:
 
-Total booking records
-Total revenue
-Average fare
-Minimum fare
-Maximum fare
-Airline-wise booking count
-Airline-wise revenue
-Route-wise booking count
-Booking status distribution
-Revenue by booking status
-Average passenger age
-Age range
-Payment method distribution
-Payment method revenue
-Departure city booking count
-City-wise revenue
-Top 10 highest fare bookings
-Confirmed bookings
-Cancelled bookings
-Completed bookings
+- Total booking records
+-Total revenue
+-Average fare
+-Minimum fare
+-Maximum fare
+-Airline-wise booking count
+-Airline-wise revenue
+-Route-wise booking count
+-Booking status distribution
+-Revenue by booking status
+-Average passenger age
+-Age range
+-Payment method distribution
+-Payment method revenue
+-Departure city booking count
+-City-wise revenue
+-Top 10 highest fare bookings
+-Confirmed bookings
+-Cancelled bookings
+-Completed bookings
 
 The SQL layer helps answer business questions from the flight dataset.
 
