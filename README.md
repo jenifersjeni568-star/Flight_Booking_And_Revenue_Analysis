@@ -53,10 +53,10 @@ Power Query
 DAX
       ↓
 SkyBook Dashboard
-
+```
 ---
 
-☁️ 1. Flight Dataset
+#☁️ 1. Flight Dataset
 
 The project starts with a flight booking dataset containing information related to flights, passengers, fares, airlines, routes, cities, payment methods and booking status.
 
@@ -64,7 +64,7 @@ The raw dataset is used as the source for the complete analytics workflow.
 
 ---
 
-🪣 2. Amazon S3 – Data Storage
+#🪣 2. Amazon S3 – Data Storage
 
 Amazon S3 is used as the cloud storage layer for the flight dataset.
 
@@ -82,7 +82,10 @@ Purpose
 Store the raw flight dataset
 Provide cloud-based storage
 Make the dataset available for AWS data processing
-🔐 3. AWS IAM – Access Management
+
+---
+
+#🔐 3. AWS IAM – Access Management
 
 AWS IAM is used to manage permissions between the AWS services involved in the project.
 
@@ -96,7 +99,10 @@ Purpose
 Control service access
 Provide required permissions
 Allow AWS Glue to access the S3 data
-🔎 4. AWS Glue – Data Discovery
+
+---
+
+#🔎 4. AWS Glue – Data Discovery
 
 AWS Glue is used to discover the structure of the flight dataset.
 
@@ -112,7 +118,9 @@ new-etl-crawler
 
 The crawler automatically identifies the structure of the dataset and registers the discovered information in the Glue Data Catalog.
 
-🗂️ 5. Glue Data Catalog
+---
+
+#🗂️ 5. Glue Data Catalog
 
 The Glue Data Catalog stores the metadata discovered by AWS Glue.
 
@@ -120,7 +128,9 @@ It maintains information about the database, table structure, columns and data t
 
 This cataloged information allows Amazon Athena to understand the flight dataset and query it using SQL.
 
-🔍 6. Amazon Athena – SQL Analysis
+---
+
+#🔍 6. Amazon Athena – SQL Analysis
 
 Amazon Athena is used as the SQL analysis layer.
 
@@ -153,7 +163,9 @@ Completed bookings
 
 The SQL layer helps answer business questions from the flight dataset.
 
-🔗 7. Athena ODBC – Connectivity
+---
+
+#🔗 7. Athena ODBC – Connectivity
 
 After the AWS-side data preparation and SQL analysis, Athena ODBC is used as the connectivity bridge between Amazon Athena and Power BI.
 
@@ -165,13 +177,18 @@ Amazon Athena
 Athena ODBC
       ↓
 Power BI Desktop
-📊 8. Power BI – Data Connection
+
+---
+
+#📊 8. Power BI – Data Connection
 
 Power BI Desktop is used to connect to the flight data through the configured Athena ODBC connection.
 
 The required database and flight table are selected and loaded into Power BI for further preparation and visualization.
 
-🧹 9. Power Query – Data Preparation
+---
+
+#🧹 9. Power Query – Data Preparation
 
 Power Query is used inside Power BI to prepare the data before building the dashboard.
 
@@ -188,7 +205,9 @@ Payment method
 
 Power Query is also used to check data types, standardize values and prepare the date field for monthly trend analysis.
 
-🧮 10. DAX – KPI Development
+---
+
+#🧮 10. DAX – KPI Development
 
 DAX measures are created in Power BI to calculate important business indicators dynamically.
 
@@ -221,11 +240,15 @@ CALCULATE(
 
 These measures provide dynamic KPI values that respond to report filters.
 
-📈 11. SkyBook Dashboard
+---
+
+#📈 11. SkyBook Dashboard
 
 The final output of the project is an interactive Power BI dashboard containing two main pages.
 
+--
 ✈️ Page 1 – Flight Booking Overview
+--
 
 The first page provides an overall view of flight booking performance.
 
@@ -247,9 +270,13 @@ Flight Date
 
 This page answers:
 
+--
 "What is happening in the flight booking data?"
+--
 
+--
 💰 Page 2 – Revenue & Booking Analytics
+--
 
 The second page provides a deeper analysis of revenue and booking performance.
 
@@ -266,4 +293,6 @@ Airline → Route → Booking Status analysis
 
 This page answers:
 
+--
 "Where is the booking and revenue performance coming from?"
+--
