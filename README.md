@@ -54,11 +54,15 @@ DAX
       ↓
 SkyBook Dashboard
 
+---
+
 ☁️ 1. Flight Dataset
 
 The project starts with a flight booking dataset containing information related to flights, passengers, fares, airlines, routes, cities, payment methods and booking status.
 
 The raw dataset is used as the source for the complete analytics workflow.
+
+---
 
 🪣 2. Amazon S3 – Data Storage
 
