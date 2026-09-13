@@ -70,20 +70,23 @@ The raw dataset is used as the source for the complete analytics workflow.
 
 Amazon S3 is used as the cloud storage layer for the flight dataset.
 
-The flight booking file is uploaded to the project S3 bucket so that AWS Glue can later discover its structure and Amazon Athena can query the cataloged data.
+* The flight booking file is uploaded to the project S3 bucket so that AWS Glue can later discover its structure and Amazon Athena can query the cataloged data.
 
 Actual S3 Bucket Used
+```text
 
 new-etl-source-bucket
 
+```
 Project Data Location
 
+```text
 s3://new-etl-source-bucket/customer-db/
-
+```
 Purpose
-Store the raw flight dataset
-Provide cloud-based storage
-Make the dataset available for AWS data processing
+- Store the raw flight dataset
+- Provide cloud-based storage
+- Make the dataset available for AWS data processing
 
 ---
 
